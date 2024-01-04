@@ -36,6 +36,12 @@ page.drawText("Happy New Year", {
   y: calcPt(132),
   size: calcPt(10),
 });
+page.drawText("ver2024", {
+  font: customFont,
+  x: calcPt(72),
+  y: calcPt(126),
+  size: calcPt(5),
+});
 
 page.drawText("This New Year's card was generated using this program. ", {
   font: defaultFont,
