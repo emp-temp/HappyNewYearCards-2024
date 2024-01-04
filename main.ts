@@ -19,7 +19,7 @@ const customFont = await pdfDoc.embedFont(customFontBytes);
 
 const page = pdfDoc.addPage([calcPt(100), calcPt(148)]);
 
-const backgroundPicture = await Deno.readFile("program.png");
+const backgroundPicture = await Deno.readFile("./assets/program.png");
 const backgroundImage = await pdfDoc.embedPng(backgroundPicture);
 const backgroundDims = backgroundImage.scale(0.2);
 
@@ -80,7 +80,7 @@ page.drawText("https://github.com/emp-temp/HappyNewYearCards-2024", {
   size: calcPt(2),
 });
 
-const denoPicture = await Deno.readFile("deno_kun.png");
+const denoPicture = await Deno.readFile("./assets/deno_kun.png");
 const denoImage = await pdfDoc.embedPng(denoPicture);
 const denoDims = denoImage.scale(0.3);
 
@@ -91,7 +91,7 @@ page.drawImage(denoImage, {
   height: denoDims.height,
 });
 
-const deno2Picture = await Deno.readFile("deno2.png");
+const deno2Picture = await Deno.readFile("./assets/deno2.png");
 const deno2Image = await pdfDoc.embedPng(deno2Picture);
 const deno2Dims = deno2Image.scale(0.1);
 
