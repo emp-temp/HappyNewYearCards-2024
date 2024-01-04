@@ -104,5 +104,5 @@ page.drawImage(deno2Image, {
 
 
 const pdfBytes = await pdfDoc.save();
-await Deno.writeFile("./NewYearCard.pdf", pdfBytes);
-console.log("PDF file written to ./NewYearCard.pdf");
+await Deno.writeFile("./out/NewYearCard.pdf", pdfBytes);
+console.log("PDF file written to ./out/NewYearCard.pdf");
